@@ -1,3 +1,22 @@
+## Project status
+
+Determination of density:
+
+<table width="100%">
+  <tr>
+  <td width="25%" align="center">Particles</td>
+  <td width="25%" align="center">Area of effect</td>
+  <td width="25%" align="center">Density</td>
+  <td width="25%" align="center">Smoothing</td>
+  </tr>
+  <tr>
+  <td width="25%"><img src="/images/scr1.png?raw=true"/></td>
+  <td width="25%"><img src="/images/scr2.png?raw=true"/></td>
+  <td width="25%"><img src="/images/scr3.png?raw=true"/></td>
+  <td width="25%"><img src="/images/scr4.png?raw=true"/></td>
+  </tr>
+</table>
+
 ## Build process
 
 First you need to install all the necessary system headers and building tools:
@@ -26,9 +45,7 @@ target_include_directories(glad PUBLIC include/)
 Now the entire code environment is well configured and ready for build process:
 
 ```Bash
-cmake -S . -B build
-cd build
-make -j4
+cmake -S . -B build && cd build && make -j4
 ```
 
 After successful compilation, you can start simulator with:
