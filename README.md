@@ -6,7 +6,7 @@ Determination of density:
   <tr>
   <td width="25%" align="center">Particles</td>
   <td width="25%" align="center">Area of effect</td>
-  <td width="25%" align="center">Density</td>
+  <td width="25%" align="center">Classification</td>
   <td width="25%" align="center">Smoothing</td>
   </tr>
   <tr>
