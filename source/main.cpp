@@ -129,7 +129,7 @@ int main() {
     glBindVertexArray(0);
 
     std::vector<Particle> particles;
-    for (int i=0;i<300;i++) particles.push_back(Particle());
+    for (int i=0;i<100;i++) particles.push_back(Particle());
 
     unsigned int texture;
     glGenTextures(1, &texture);
@@ -153,7 +153,7 @@ int main() {
             float force = maxf(0.0,smoothradius*smoothradius-dist*dist);
             value+=pow(force,3);
         }
-        value*=5500;
+        value*=11000;
         if (value<1) {
             data[i*3]=((1-value)*(0.1266)+(value)*(1.0))*255;
             data[i*3+1]=((1-value)*(0.5330)+(value)*(0.9952))*255;
